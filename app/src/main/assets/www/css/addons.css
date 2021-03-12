@@ -1,0 +1,59 @@
+/* Variables */
+
+:root {
+    --theme-color: #6366f1;
+    --menu-height: 64px;
+}
+
+/* Dark mode toogle button */
+
+.toggle__dot {
+    top: -.25rem;
+    left: -.25rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggled > .toggle__dot {
+    transform: translateX(100%);
+    background-color: var(--theme-color);
+}
+
+.toggled > .toggle__line {
+    background-color: rgb(55, 65, 81);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Other */
+
+.app-content-height {
+    height: calc(100vh - var(--menu-height));
+}
+
+.mt-menu {
+    margin-top: var(--menu-height);
+}
+
+.task-height {
+    height: 90vh;
+}
+
+.b-0 {
+    bottom: 0px;
+}
